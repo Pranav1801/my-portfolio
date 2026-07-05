@@ -3,6 +3,7 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { content } from '../content.js'
 import { magnetize, reduced, tilt } from '../interactions.js'
+import { TLink } from '../transition.jsx'
 import ProjectCard from '../components/ProjectCard.jsx'
 
 export default function Projects() {
@@ -29,6 +30,7 @@ export default function Projects() {
   return (
     <main ref={ref}>
       <section className="section work">
+        <TLink to="/" className="back-link" data-magnetic>&#8592; Back</TLink>
         <h2 className="section-title">All Projects</h2>
         <div className="projects">
           {content.projects.map((proj, i) => (

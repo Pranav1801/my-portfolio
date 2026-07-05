@@ -237,6 +237,20 @@ main { position: relative; z-index: 1; }
 .resume-btn:hover { box-shadow: 0 0 30px rgba(217, 255, 63, 0.35); }
 
 /* projects */
+.back-link {
+  display: inline-block;
+  align-self: flex-start;
+  margin-bottom: 2rem;
+  color: var(--muted);
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.back-link:hover { color: var(--accent); }
+
 .show-all {
   display: inline-block;
   align-self: flex-start;
