@@ -51,6 +51,16 @@ body.has-cursor, body.has-cursor a { cursor: none; }
   letter-spacing: 0.3em;
 }
 
+.page-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 95;
+  display: none;
+  background: #121218;
+  border-top: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
+}
+
 .progress-bar {
   position: fixed;
   top: 0; left: 0;
