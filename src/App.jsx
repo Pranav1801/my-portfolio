@@ -8,6 +8,7 @@ import { initCursor, magnetize, reduced } from './interactions.js'
 import { TransitionContext, TLink } from './transition.jsx'
 import Home from './pages/Home.jsx'
 import Projects from './pages/Projects.jsx'
+import Logo from './components/Logo.jsx'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -49,7 +50,7 @@ export default function App() {
 
     const intro = gsap.timeline()
     intro
-      .to('.preloader-text', { opacity: 1, duration: 0.5 })
+      .to('.preloader-logo', { opacity: 1, duration: 0.5 })
       .to('#preloader', { yPercent: -100, duration: 0.8, ease: 'power4.inOut', delay: 0.3 })
       .set('#preloader', { display: 'none' })
       .from('.nav', { opacity: 0, y: -16, duration: 0.5 }, '-=0.3')
@@ -89,7 +90,7 @@ export default function App() {
 
   return (
     <TransitionContext.Provider value={go}>
-      <div id="preloader"><span className="preloader-text">PG</span></div>
+      <div id="preloader"><Logo className="preloader-logo" /></div>
       <div className="progress-bar" aria-hidden="true" />
       <div className="cursor" aria-hidden="true" />
       <div className="cursor-ring" aria-hidden="true" />
@@ -97,7 +98,7 @@ export default function App() {
       <canvas id="webgl" ref={canvasRef} aria-hidden="true" />
 
       <header className="nav" ref={navRef}>
-        <TLink to="/" className="nav-logo" data-magnetic>PG</TLink>
+        <TLink to="/" className="nav-logo" aria-label="Home" data-magnetic><Logo /></TLink>
         <nav className="nav-links">
           <TLink to="/" targetId="work" data-magnetic>Work</TLink>
           <TLink to="/" targetId="about" data-magnetic>About</TLink>
