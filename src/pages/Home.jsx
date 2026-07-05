@@ -73,7 +73,7 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <a className="resume-btn" href="/Pranav_Gupta_Resume.pdf" download data-magnetic data-reveal>
+        <a className="resume-btn" href={`${import.meta.env.BASE_URL}Pranav_Gupta_Resume.pdf`} download data-magnetic data-reveal>
           Resume &#8595;
         </a>
       </section>
