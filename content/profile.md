@@ -1,18 +1,19 @@
 ---
 name: Pranav Gupta
-role: Software Developer
-tagline: I build things for the web & beyond.
-email: kusanagigodou18@gmail.com
+role: Software Engineer
+tagline: Building scalable applications and intelligent systems.
+email: pranavgupta1801@gmail.com
 github: https://github.com/Pranav1801
 linkedin: https://www.linkedin.com/in/pranav-gupta-92867123b
-location: India
+location: Noida, India
 ---
 
-I'm a software developer who enjoys turning complex problems into clean,
-usable products. From full-stack web apps to Android apps and developer
-tooling, I care about the details — performance, polish, and code that
-reads like it was written on purpose.
+I'm a software engineer working across frontend and backend — from
+responsive React interfaces to Python services and API design. I care
+about performance, polish, and code that reads like it was written on
+purpose.
 
-Currently exploring the intersection of **AI tooling** and **developer
-experience**, building MCP servers and experimenting with what modern
-LLM-powered workflows can do.
+My recent work focuses on **AI-powered document analysis**: semantic and
+recursive chunking, PDF embedding pipelines, and **Model Context Protocol
+(MCP)** integrations that let LLMs understand and query large, multi-source
+documents.

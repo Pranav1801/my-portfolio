@@ -1,10 +1,11 @@
 ---
-role: Software Developer Intern
-company: Previous Company
-period: 2023 — 2024
+role: Software Engineer
+company: Finspectra
+period: May 2025 — Nov 2025
 order: 2
 ---
 
-Edit `content/experience/02-previous.md` to describe this role. Add more
-roles by dropping new `.md` files in this folder — they appear
-automatically, sorted by `order`.
+Developed scalable applications on the Salesforce platform using Apex,
+Lightning Web Components, and Visualforce. Built REST and SOAP API
+integrations, automated business workflows with Salesforce Flows, and
+maintained 90%+ test coverage across the full development lifecycle.

@@ -3,13 +3,16 @@ title: Skills
 ---
 
 - group: Languages
-  items: JavaScript, TypeScript, Python, Kotlin, HTML, CSS, SQL
+  items: JavaScript, TypeScript, Python, Kotlin, HTML, CSS
 
 - group: Frontend
-  items: React, Three.js, GSAP, Tailwind CSS, Vite, Responsive Design
+  items: React, Material-UI, styled-components, Responsive Design, Jest, React Testing Library
 
-- group: Backend & Tools
-  items: Node.js, REST APIs, MCP Servers, Git, GitHub Actions, Firebase
+- group: Backend & AI
+  items: Python, Django, REST & SOAP APIs, MCP Servers, Embedding Pipelines, Semantic Chunking
 
-- group: Mobile
-  items: Android, Kotlin, Jetpack Compose
+- group: Salesforce
+  items: Apex, Lightning Web Components, Visualforce, Salesforce Flows, Process Builder
+
+- group: Tools & Platforms
+  items: Git, Docker, Postman, Android Studio, VS Code, Selenium

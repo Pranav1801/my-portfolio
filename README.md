@@ -24,7 +24,6 @@ Everything under `content/` is the source of truth:
 | `content/experience/*.md` | One file per role, sorted by `order` |
 
 Add/remove/edit `.md` files and rebuild — sections update automatically.
-The experience files still contain placeholder text — replace with your real roles.
 
 ## Stack
 

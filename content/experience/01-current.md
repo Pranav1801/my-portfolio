@@ -1,10 +1,11 @@
 ---
-role: Software Developer
-company: Your Current Company
-period: 2024 — Present
+role: AI/ML Engineer
+company: Netision Technology LLP
+period: Feb 2026 — Jun 2026
 order: 1
 ---
 
-Building and shipping production features across the stack. Replace this
-text in `content/experience/01-current.md` with what you actually do —
-impact, numbers, and technologies.
+Built advanced document processing for a Doc Analyst Agent — semantic and
+recursive chunking for better context preservation, MCP backend tooling
+with clarification workflows and PDF embedding pipelines, and a scalable
+multi-PDF ingestion UI for simultaneous document analysis and comparison.
