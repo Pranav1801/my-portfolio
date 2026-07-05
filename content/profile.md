@@ -1,11 +1,11 @@
 ---
 name: Pranav Gupta
 role: Software Engineer
-tagline: Building scalable applications and intelligent systems.
+tagline: I build polished web experiences — and AI systems that make sense of messy documents.
 email: pranavgupta1801@gmail.com
 github: https://github.com/Pranav1801
 linkedin: https://www.linkedin.com/in/pranav-gupta-92867123b
-location: Noida, India
+location: India
 ---
 
 I'm a software engineer working across frontend and backend — from
