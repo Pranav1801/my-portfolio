@@ -20,7 +20,7 @@ Everything under `content/` is the source of truth:
 |---|---|
 | `content/profile.md` | Name, role, tagline, links, About text |
 | `content/skills.md` | Skill groups (`- group:` / `items:` blocks) |
-| `content/projects/*.md` | One file per project (frontmatter: title, year, tags, link) |
+| `content/projects/*.md` | One file per project (frontmatter: title, year, tags, link, company — link and company are optional; company renders as "For: …") |
 | `content/experience/*.md` | One file per role, sorted by `order` |
 
 Add/remove/edit `.md` files and rebuild — sections update automatically.

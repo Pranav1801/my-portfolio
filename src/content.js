@@ -70,11 +70,12 @@ export function renderContent(c) {
   $('.projects').innerHTML = c.projects
     .map(
       ({ data: d, body }, i) => `
-      <a class="project-card${d.featured === 'true' ? ' featured' : ''}" href="${d.link}"
-         target="_blank" rel="noopener" data-reveal>
+      <a class="project-card${d.featured === 'true' ? ' featured' : ''}"
+         ${d.link ? `href="${d.link}" target="_blank" rel="noopener"` : ''} data-reveal>
         <span class="project-index">${String(i + 1).padStart(2, '0')}</span>
         <div class="project-info">
           <h3 class="project-title">${d.title}</h3>
+          ${d.company ? `<p class="project-company">For: ${d.company}</p>` : ''}
           <div class="project-desc">${marked.parse(body)}</div>
           <div class="project-tags">${(d.tags || '')
             .split(',')

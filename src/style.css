@@ -234,6 +234,13 @@ main { position: relative; z-index: 1; }
   transition: color 0.3s;
 }
 .project-card:hover .project-title { color: var(--accent); }
+.project-company {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-top: 0.3rem;
+}
 .project-desc { color: var(--muted); max-width: 55ch; margin-top: 0.4rem; font-size: 0.95rem; }
 .project-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.8rem; }
 .project-tags span {
@@ -254,6 +261,8 @@ main { position: relative; z-index: 1; }
   transition: opacity 0.3s, transform 0.3s;
 }
 .project-card:hover .project-arrow { opacity: 1; transform: translate(0, 0); }
+.project-card:not([href]) .project-arrow { display: none; }
+body.has-cursor .project-card:not([href]) { cursor: none; }
 
 /* experience */
 .timeline { display: flex; flex-direction: column; gap: 3rem; }
