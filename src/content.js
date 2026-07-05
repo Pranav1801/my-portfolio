@@ -44,6 +44,28 @@ function parseSkillGroups(body) {
   return groups
 }
 
+export const projectsHTML = (projects) =>
+  projects
+    .map(
+      ({ data: d, body }, i) => `
+      <a class="project-card"
+         ${d.link ? `href="${d.link}" target="_blank" rel="noopener"` : ''} data-reveal>
+        <span class="project-index">${String(i + 1).padStart(2, '0')}</span>
+        <div class="project-info">
+          <h3 class="project-title">${d.title}</h3>
+          ${d.company ? `<p class="project-company">For: ${d.company}</p>` : ''}
+          <div class="project-desc">${marked.parse(body)}</div>
+          <div class="project-tags">${(d.tags || '')
+            .split(',')
+            .map((t) => `<span>${t.trim()}</span>`)
+            .join('')}</div>
+        </div>
+        <span class="project-year">${d.year || ''}</span>
+        <span class="project-arrow" aria-hidden="true">&#8599;</span>
+      </a>`
+    )
+    .join('')
+
 export function renderContent(c) {
   const $ = (s) => document.querySelector(s)
   const { data: p, body: about } = c.profile
@@ -67,26 +89,7 @@ export function renderContent(c) {
     )
     .join('')
 
-  $('.projects').innerHTML = c.projects
-    .map(
-      ({ data: d, body }, i) => `
-      <a class="project-card${d.featured === 'true' ? ' featured' : ''}"
-         ${d.link ? `href="${d.link}" target="_blank" rel="noopener"` : ''} data-reveal>
-        <span class="project-index">${String(i + 1).padStart(2, '0')}</span>
-        <div class="project-info">
-          <h3 class="project-title">${d.title}</h3>
-          ${d.company ? `<p class="project-company">For: ${d.company}</p>` : ''}
-          <div class="project-desc">${marked.parse(body)}</div>
-          <div class="project-tags">${(d.tags || '')
-            .split(',')
-            .map((t) => `<span>${t.trim()}</span>`)
-            .join('')}</div>
-        </div>
-        <span class="project-year">${d.year || ''}</span>
-        <span class="project-arrow" aria-hidden="true">&#8599;</span>
-      </a>`
-    )
-    .join('')
+  $('.projects').innerHTML = projectsHTML(c.projects.slice(0, 4))
 
   $('.timeline').innerHTML = c.experience
     .map(

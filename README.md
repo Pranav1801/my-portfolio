@@ -24,6 +24,9 @@ Everything under `content/` is the source of truth:
 | `content/experience/*.md` | One file per role, sorted by `order` |
 
 Add/remove/edit `.md` files and rebuild — sections update automatically.
+The home page shows the first 4 projects (file-name order); `projects.html`
+lists them all. The Resume button serves `public/Pranav_Gupta_Resume.pdf` —
+replace that file to update it.
 
 ## Stack
 

@@ -206,7 +206,36 @@ main { position: relative; z-index: 1; }
 }
 .skill-group li:hover { border-color: var(--accent); color: var(--accent); }
 
+.resume-btn {
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: 3rem;
+  background: var(--accent);
+  color: var(--bg);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.9rem 2.4rem;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.resume-btn:hover { box-shadow: 0 0 30px rgba(217, 255, 63, 0.35); }
+
 /* projects */
+.show-all {
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: 2.5rem;
+  color: var(--accent);
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s;
+}
+.show-all:hover { border-color: var(--accent); }
 .projects { display: flex; flex-direction: column; }
 .project-card {
   display: grid;
