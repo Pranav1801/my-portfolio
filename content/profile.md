@@ -1,7 +1,7 @@
 ---
 name: Pranav Gupta
 role: Software Engineer
-tagline: I build polished web experiences — and AI systems that make sense of messy documents.
+tagline: I turn messy problems into clean software — and thousand-page PDFs into answers
 email: pranavgupta1801@gmail.com
 github: https://github.com/Pranav1801
 linkedin: https://www.linkedin.com/in/pranav-gupta-92867123b
