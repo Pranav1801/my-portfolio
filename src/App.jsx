@@ -48,10 +48,23 @@ export default function App() {
     initCursor()
     magnetize(navRef.current)
 
+    // draw the monogram outline, then flood the fill, then lift the curtain
+    const logoPath = document.querySelector('.preloader-logo path')
+    const len = logoPath.getTotalLength()
+    gsap.set(logoPath, {
+      strokeDasharray: len,
+      strokeDashoffset: len,
+      stroke: 'currentColor',
+      strokeWidth: 2.5,
+      fillOpacity: 0,
+    })
     const intro = gsap.timeline()
     intro
-      .to('.preloader-logo', { opacity: 1, duration: 0.5 })
-      .to('#preloader', { yPercent: -100, duration: 0.8, ease: 'power4.inOut', delay: 0.3 })
+      .to('.preloader-logo', { opacity: 1, duration: 0.2 })
+      .to(logoPath, { strokeDashoffset: 0, duration: 1.5, ease: 'power2.inOut' })
+      .to(logoPath, { fillOpacity: 1, duration: 0.5, ease: 'power2.out' }, '-=0.45')
+      .to('.preloader-logo', { scale: 0.92, duration: 0.4, ease: 'power2.inOut' }, '<')
+      .to('#preloader', { yPercent: -100, duration: 0.8, ease: 'power4.inOut', delay: 0.15 })
       .set('#preloader', { display: 'none' })
       .from('.nav', { opacity: 0, y: -16, duration: 0.5 }, '-=0.3')
     if (reduced) intro.progress(1)

@@ -25,7 +25,7 @@ export default function Home() {
     if (reduced) return
     const ctx = gsap.context(() => {
       gsap
-        .timeline({ delay: firstVisit.value ? 1.5 : 0.5 })
+        .timeline({ delay: firstVisit.value ? 2.6 : 0.5 })
         .from('.hero-title .line-inner', { yPercent: 110, duration: 1, stagger: 0.12, ease: 'power4.out' })
         .from('.hero-eyebrow, .hero-tagline, .scroll-hint', { opacity: 0, y: 20, stagger: 0.08, duration: 0.6 }, '-=0.6')
       firstVisit.value = false
